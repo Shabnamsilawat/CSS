@@ -1,22 +1,16 @@
-
-#outer-box{
- background-color: purple;
+/* Write your code here: */
+h1, h2{
+color: blueviolet;
 }
-
-.box {
-  background-color: blue;
-  padding: 10px;
+.box > p{
+    color: firebrick;
 }
-
-.inner-box{
-  background-color: red;
+.box li{
+    color: blue;
 }
-
-p {
-  color: yellow;
-  margin: 0;
-  padding: 0;
+li.done{
+    color: seagreen;
 }
-.white-text{
-  color: white;
+ul p.done{
+    font-size: 0.5rem;
 }
