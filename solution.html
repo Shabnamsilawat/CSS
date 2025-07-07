@@ -3,58 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
+  <title>CSS Float</title>
   <style>
-    .flag {
-      width: 900px;
-      height: 600px;
-      position: relative;
-      background-color: #CE1126;
-
-    }
-
-    .flag > div {
-      background-color: #002868;
-      height: 300px;
-      width: 100%;
-      position: absolute;
-      top: 150px;
-    }
-
-    .flag > div > div {
-      background-color: white;
-      position: absolute;
-
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      top: 50px;
-      left: 350px;
+    div {
+      display: inline-block;
+      width: 40%;
     }
 
     p {
-      font-size: 5rem;
-      color: white;
-      text-align: center;
-      padding: 0;
-      margin: 0;
+      font-size: 2em;
     }
 
-    .flag>div div p {
-      color: black;
+    .cat {
+      float: left;
+      background-color: aquamarine;
+    }
+
+    .dog {
+      float: right;
+      background-color: coral;
+    }
+
+    img {
+      float: left;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      background-color: blueviolet;
     }
   </style>
 </head>
 
 <body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
-      </div>
-    </div>
+  <div class="cat">
+    <h2>CatCSS</h2>
+
+    <img src="cat.jpeg" alt="cat in a box" />
+    <p class="first-paragraph">Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty
+      poochy. Sleep on keyboard
+      toy
+      mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. The dog
+      smells
+      bad gnaw the corn cob.</p>
   </div>
+
+  <div class="dog">
+    <h2>DogCSS</h2>
+    <img src="dog.jpeg" alt="dogs in a box" />
+    <p class="second-paragraph">Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a
+      nice
+      floof, long doggo noodle
+      horse vvv very taste wow. Very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me a
+      frighten.</p>
+  </div>
+
+  <footer>Copyright. This is the footer</footer>
 </body>
 
 </html>
